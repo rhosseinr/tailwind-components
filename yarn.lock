@@ -1517,6 +1517,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/uuid@npm:^8.3.4":
+  version: 8.3.4
+  resolution: "@types/uuid@npm:8.3.4"
+  checksum: 6f11f3ff70f30210edaa8071422d405e9c1d4e53abbe50fdce365150d3c698fe7bbff65c1e71ae080cbfb8fded860dbb5e174da96fdbbdfcaa3fb3daa474d20f
+  languageName: node
+  linkType: hard
+
 "@yelo/rollup-node-external@npm:^1.0.1":
   version: 1.0.1
   resolution: "@yelo/rollup-node-external@npm:1.0.1"
@@ -3881,6 +3888,7 @@ __metadata:
     "@types/lodash": ^4.14.178
     "@types/moment-jalaali": ^0.7.5
     "@types/react": ^17.0.39
+    "@types/uuid": ^8.3.4
     "@yelo/rollup-node-external": ^1.0.1
     autoprefixer: ^10.4.2
     humps: ^2.0.1

@@ -28,6 +28,7 @@
     "@types/lodash": "^4.14.178",
     "@types/moment-jalaali": "^0.7.5",
     "@types/react": "^17.0.39",
+    "@types/uuid": "^8.3.4",
     "@yelo/rollup-node-external": "^1.0.1",
     "rollup": "^2.67.2",
     "rollup-plugin-copy": "^3.4.0",
