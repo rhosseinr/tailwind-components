@@ -1,0 +1,12 @@
+.root {
+  backdrop-filter: blur(0.8px);
+}
+
+.modal{
+}
+
+.modal:focus{
+}
+
+.close{
+}

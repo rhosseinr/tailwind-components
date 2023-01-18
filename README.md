@@ -1,1 +1,3 @@
-# tailwind-components
+# Tailwind Components
+
+## Rect Component with tailwind css
