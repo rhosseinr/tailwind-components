@@ -1,6 +1,6 @@
-module.exports = (componentName) => ({
+module.exports = () => ({
   extension: `.module.css`,
-  content: `.${componentName} {
+  content: `.root {
   color: #02203C;
 }
 `,

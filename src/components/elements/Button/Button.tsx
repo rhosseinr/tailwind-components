@@ -6,7 +6,7 @@ import { ButtonProps } from './Button.types';
 const ButtonComponent = (props: ButtonProps, buttonRef) => {
   const {
     className = '',
-    variant,
+    variant = 'primary',
     children,
     active,
     width,
