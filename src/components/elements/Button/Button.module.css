@@ -1,25 +1,25 @@
 .root {
-  @apply m-1 shadow rounded-md leading-tight transition duration-150 ease-in-out flex justify-center items-center;
+  @apply m-1 shadow-md rounded leading-tight transition duration-150 ease-in-out flex justify-center items-center text-white;
 }
 
 .primary{
-  @apply bg-blue-600 text-white;
+  @apply bg-blue-600 ;
 }
 
 .error,.danger{
-  @apply bg-red-600 text-white;
+  @apply bg-red-600 ;
 }
 
 .warning{
-  @apply bg-yellow-500 text-white;
+  @apply bg-yellow-600 ;
 }
 
 .success{
-  @apply bg-green-500 text-white;
+  @apply bg-green-600 ;
 }
 
 .info{
-  @apply bg-blue-400 text-white;
+  @apply bg-sky-600 ;
 }
 
 .light{
@@ -27,9 +27,34 @@
 }
 
 .dark{
-  @apply bg-gray-800 text-white;
+  @apply bg-gray-800 ;
 }
 
 .secondary{
-  @apply bg-purple-600 text-white;
+  @apply bg-neutral-400;
+}
+
+.loading {
+  @apply cursor-not-allowed;
+  /* animate-spin */
+}
+
+.sm {
+  @apply px-2 py-1 text-sm
+}
+
+.md {
+  @apply px-4 py-2 text-base
+}
+
+.lg {
+  @apply px-5 py-3 text-lg
+}
+
+.xl {
+  @apply px-6 py-4 text-xl
+}
+
+.flat {
+  @apply shadow-none
 }
