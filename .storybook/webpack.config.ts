@@ -43,6 +43,5 @@ module.exports = async ({ config, mode }) => {
   });
 
   config.module.rules = rules;
-  console.log(config.module.rules);
   return config;
 };
