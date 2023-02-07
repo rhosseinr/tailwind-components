@@ -17,7 +17,7 @@ Work in progress
 
 Run `npm run storybook` to preview stories in a browser.
 
-## Building the tokens
+## Building
 
 Run `npm run build`
 
