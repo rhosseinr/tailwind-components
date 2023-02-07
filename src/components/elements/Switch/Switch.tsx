@@ -3,7 +3,7 @@ import styles from './Switch.module.css';
 import { SwitchProps } from './Switch.types';
 
 const Switch: React.FC<SwitchProps> = ({ foo }) => (
-  <div data-testid="Switch" className={styles.Switch}>
+  <div data-test-id="Switch" className={styles.Switch}>
     {foo}
   </div>
 );

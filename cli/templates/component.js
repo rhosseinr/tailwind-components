@@ -5,7 +5,7 @@ import styles from './${componentName}.module.css';
 import { ${componentName}Props } from './${componentName}.types';
 
 const ${componentName}: React.FC<${componentName}Props> = ({ foo }) => (
-  <div data-testid="${componentName}" className={styles.${componentName}}>
+  <div data-test-id="${componentName}" className={styles.${componentName}}>
     {foo}
   </div>
 );

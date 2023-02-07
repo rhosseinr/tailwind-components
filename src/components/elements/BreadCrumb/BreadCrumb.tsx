@@ -3,7 +3,7 @@ import styles from './BreadCrumb.module.css';
 import { BreadCrumbProps } from './BreadCrumb.types';
 
 const BreadCrumb: React.FC<BreadCrumbProps> = ({ foo }) => (
-  <div data-testid="BreadCrumb" className={styles.BreadCrumb}>
+  <div data-test-id="BreadCrumb" className={styles.BreadCrumb}>
     {foo}
   </div>
 );

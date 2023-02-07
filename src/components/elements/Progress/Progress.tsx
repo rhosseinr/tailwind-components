@@ -3,7 +3,7 @@ import styles from './Progress.module.css';
 import { ProgressProps } from './Progress.types';
 
 const Progress: React.FC<ProgressProps> = ({ foo }) => (
-  <div data-testid="Progress" className={styles.Progress}>
+  <div data-test-id="Progress" className={styles.Progress}>
     {foo}
   </div>
 );

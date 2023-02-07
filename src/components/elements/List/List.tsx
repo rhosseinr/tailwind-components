@@ -3,7 +3,7 @@ import styles from './List.module.css';
 import { ListProps } from './List.types';
 
 const List: React.FC<ListProps> = ({ foo }) => (
-  <div data-testid="List" className={styles.List}>
+  <div data-test-id="List" className={styles.List}>
     {foo}
   </div>
 );

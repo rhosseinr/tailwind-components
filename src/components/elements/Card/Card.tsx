@@ -3,7 +3,7 @@ import styles from './Card.module.css';
 import { CardProps } from './Card.types';
 
 const Card: React.FC<CardProps> = ({ foo }) => (
-  <div data-testid="Card" className={styles.Card}>
+  <div data-test-id="Card" className={styles.Card}>
     {foo}
   </div>
 );
