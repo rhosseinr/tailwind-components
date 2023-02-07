@@ -8,5 +8,5 @@ export default {
 };
 
 export const Default = (args: ModalProps) => (
-  <Modal {...args} foo="I'm an example component." />
+  <Modal {...args} children="I'm an example component." />
 );

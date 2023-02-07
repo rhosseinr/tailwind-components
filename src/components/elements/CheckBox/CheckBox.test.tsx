@@ -8,13 +8,13 @@ describe('Test CheckBox Component', () => {
 
   beforeEach(() => {
     props = {
-      foo: 'Im an example component.',
+      children: 'Im an example component.',
     };
   });
 
   const renderComponent = () => render(<CheckBox {...props} />);
 
-  it('should render foo correctly', () => {
+  it('should render children correctly', () => {
     const { getByTestId } = renderComponent();
     const component = getByTestId('CheckBox');
     expect(component).toHaveTextContent('Im an example component.');

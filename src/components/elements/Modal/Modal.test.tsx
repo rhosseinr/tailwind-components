@@ -8,13 +8,13 @@ describe('Test Modal Component', () => {
 
   beforeEach(() => {
     props = {
-      foo: 'Im an example component.',
+      children: 'Im an example component.',
     };
   });
 
   const renderComponent = () => render(<Modal {...props} />);
 
-  it('should render foo correctly', () => {
+  it('should render children correctly', () => {
     const { getByTestId } = renderComponent();
     const component = getByTestId('Modal');
     expect(component).toHaveTextContent('Im an example component.');
