@@ -1,7 +1,7 @@
 module.exports = () => ({
   extension: `.module.css`,
   content: `.root {
-  color: #02203C;
+  @apply pa-2;
 }
 `,
 });
