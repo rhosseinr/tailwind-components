@@ -1,3 +1,52 @@
-.Alert {
-  color: #02203C;
+.root {
+  @apply m-1 shadow-md rounded leading-tight transition duration-150 ease-in-out text-white;
+}
+
+.primary{
+  @apply bg-blue-400 ;
+}
+
+.error,.danger{
+  @apply bg-red-400 ;
+}
+
+.warning{
+  @apply bg-yellow-400 ;
+}
+
+.success{
+  @apply bg-green-400 ;
+}
+
+.info{
+  @apply bg-sky-400 ;
+}
+
+.secondary{
+  @apply bg-neutral-400;
+}
+
+.loading {
+  @apply cursor-not-allowed;
+  /* animate-spin */
+}
+
+.sm {
+  @apply px-4 py-2 text-sm
+}
+
+.md {
+  @apply px-6 py-3 text-base
+}
+
+.lg {
+  @apply px-8 py-4 text-lg
+}
+
+.xl {
+  @apply px-10 py-5 text-xl
+}
+
+.flat {
+  @apply shadow-none
 }
