@@ -25,7 +25,7 @@ if (!componentName) {
   process.exit(1);
 }
 
-console.log(`Creating ${type} templates with name: ${componentName}`);
+console.log(`Creating ${type} templates with name: ${componentName.green}`);
 
 const componentDirectory = `./src/components/${type}s/${componentName}`;
 

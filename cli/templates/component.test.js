@@ -11,6 +11,9 @@ describe('Test ${componentName} Component', () => {
   beforeEach(() => {
     props = {
       children: 'Im an example component.',
+      flat: false,
+      loading: false,
+      disabled: false,
     };
   });
 
