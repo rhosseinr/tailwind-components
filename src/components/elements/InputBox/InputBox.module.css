@@ -3,7 +3,9 @@
 }
 
 .root input{
-  @apply appearance-none p-2 block w-full border rounded-md border-gray-400 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm
+  @apply appearance-none leading-tight transition duration-150 ease-in-out
+    border rounded-md border-gray-400 focus:border-blue-500 focus:ring-blue-500 sm:text-sm
+    p-2 outline-none dark:bg-neutral-600 dark:text-gray-200  flex-1 block w-full
 }
 
 .error input{

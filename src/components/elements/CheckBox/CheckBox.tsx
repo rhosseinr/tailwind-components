@@ -25,7 +25,7 @@ export const CheckBox: React.FC<CheckBoxProps> = (props) => {
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
-      onChange(e.target.value);
+      onChange(e);
     }
     return null;
   };

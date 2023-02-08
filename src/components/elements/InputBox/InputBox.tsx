@@ -8,17 +8,18 @@ export const InputBox: React.FC = (props: InputBoxProps) => {
     className,
     id,
     name,
-    state = 'normal',
+    validation = 'normal',
     text,
+    value,
     onChange,
     ...rest
   } = props;
 
-  const rootClassName = cn(styles.root, styles[state], className);
+  const rootClassName = cn(styles.root, styles[validation], className);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
-      onChange(e.target.value);
+      onChange(e);
     }
     return null;
   };
@@ -29,11 +30,8 @@ export const InputBox: React.FC = (props: InputBoxProps) => {
       <input
         id={id}
         name={name}
+        value={value}
         onChange={handleOnChange}
-        autoComplete="off"
-        autoCorrect="off"
-        autoCapitalize="off"
-        spellCheck="false"
         {...rest}
       />
     </div>
