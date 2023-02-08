@@ -1,18 +1,20 @@
 import React from 'react';
-import CheckBox from './CheckBox';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { CheckBox } from './CheckBox';
 import { CheckBoxProps } from './CheckBox.types';
 
 export default {
   title: 'CheckBox',
   component: CheckBox,
-};
+} as ComponentMeta<typeof CheckBox>;
 
-export const Default = (args: CheckBoxProps) => (
-  <CheckBox
-    {...args}
-    title="checkbox"
-    name="check"
-    id="123"
-    value="checkItem"
-  />
-);
+export const Default: ComponentStory<typeof CheckBox> = (
+  args: CheckBoxProps
+) => <CheckBox {...args} />;
+
+Default.args = {
+  title: 'checkbox',
+  name: 'check',
+  id: '123',
+  value: 'checkItem',
+};

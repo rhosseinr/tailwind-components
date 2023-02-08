@@ -2,7 +2,7 @@ module.exports = (componentName) => ({
   extension: `.stories.tsx`,
   content: `import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import ${componentName} from './${componentName}';
+import { ${componentName} } from './${componentName}';
 import { ${componentName}Props } from './${componentName}.types';
 
 export default {

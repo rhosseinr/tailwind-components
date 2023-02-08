@@ -1,12 +1,17 @@
 import React from 'react';
-import Modal from './Modal';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Modal } from './Modal';
 import { ModalProps } from './Modal.types';
 
 export default {
   title: 'Modal',
   component: Modal,
-};
+} as ComponentMeta<typeof Modal>;
 
-export const Default = (args: ModalProps) => (
-  <Modal {...args} children="I'm an example component." />
+export const Default: ComponentStory<typeof Modal> = (args: ModalProps) => (
+  <Modal {...args} />
 );
+
+Default.args = {
+  children: 'Modal Title',
+};

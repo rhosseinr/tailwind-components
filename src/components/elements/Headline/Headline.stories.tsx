@@ -1,12 +1,17 @@
 import React from 'react';
-import Headline from './Headline';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Headline } from './Headline';
 import { HeadlineProps } from './Headline.types';
 
 export default {
   title: 'Headline',
   component: Headline,
-};
+} as ComponentMeta<typeof Headline>;
 
-export const Default = (args: HeadlineProps) => (
-  <Headline {...args} title="I'm an example" />
-);
+export const Default: ComponentStory<typeof Headline> = (
+  args: HeadlineProps
+) => <Headline {...args} />;
+
+Default.args = {
+  title: 'Headline Title',
+};
