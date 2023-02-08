@@ -26,3 +26,40 @@ Run `npm run build`
 Using VS Code is recommended.
 
 To benefit from the best linting and on-save formatting experience, install the recommended extensions for the workspace.
+
+## Elements
+
+✅ Button
+✅ Alert
+✅ CheckBox
+✅ HeadLine
+✅ InputBox
+✅ Modal
+⬜ Accordion
+⬜ Avatar
+⬜ Badge
+⬜ BreadCrumbs
+⬜ Card
+⬜ Collapse
+⬜ ColorPicker
+⬜ Container
+⬜ DatePicker
+⬜ DropDown
+⬜ FileInput
+⬜ Icon
+⬜ List
+⬜ Loading
+⬜ Progress
+⬜ RadioBox
+⬜ Range
+⬜ Rating
+⬜ SelectBox
+⬜ Switch
+⬜ Tab
+⬜ AutoComplete
+⬜ Slider
+⬜ Tooltip
+⬜ Sidebar
+⬜ Table
+⬜ Skeleton
+⬜ Dialog
