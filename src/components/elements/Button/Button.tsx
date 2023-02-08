@@ -1,9 +1,9 @@
-import React, { forwardRef, useRef, FC } from 'react';
+import React from 'react';
 import cn from 'clsx';
 import styles from './Button.module.css';
 import { ButtonProps } from './Button.types';
 
-const ButtonComponent = (props: ButtonProps, buttonRef) => {
+export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const {
     className = '',
     variant = 'primary',
@@ -18,8 +18,6 @@ const ButtonComponent = (props: ButtonProps, buttonRef) => {
     Component = 'button',
     ...rest
   } = props;
-
-  const ref = useRef<typeof Component>(null);
 
   const rootClassName = cn(
     styles.root,
@@ -63,10 +61,3 @@ const ButtonComponent = (props: ButtonProps, buttonRef) => {
     </Component>
   );
 };
-
-const Button: FC<ButtonProps> = forwardRef((props, ref) => {
-  return <ButtonComponent {...props} ref={ref} />;
-});
-
-Button.displayName = 'Button';
-export default Button;

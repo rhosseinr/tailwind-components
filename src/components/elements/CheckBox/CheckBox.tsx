@@ -3,7 +3,7 @@ import cn from 'clsx';
 import styles from './CheckBox.module.css';
 import { CheckBoxProps } from './CheckBox.types';
 
-const CheckBox: React.FC<CheckBoxProps> = (props) => {
+export const CheckBox: React.FC<CheckBoxProps> = (props) => {
   const { className, onChange, checked, title, value, name, id, ...rest } =
     props;
   const rootClassName = cn(styles.root, {}, className);
@@ -30,5 +30,3 @@ const CheckBox: React.FC<CheckBoxProps> = (props) => {
     </div>
   );
 };
-
-export default CheckBox;

@@ -1,11 +1,11 @@
 // import Icon from 'components/elements/Icon';
-import React, { FC, useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 // import FocusTrap from 'utils/focus-trap';
 import styles from './Modal.module.css';
 import { ModalProps } from './Modal.types';
 
-const Modal: FC<ModalProps> = ({ children, onClose }) => {
+export const Modal: React.FC<ModalProps> = ({ children, onClose }) => {
   const ref = useRef() as React.MutableRefObject<HTMLDivElement>;
 
   const handleKey = useCallback(
@@ -49,5 +49,3 @@ const Modal: FC<ModalProps> = ({ children, onClose }) => {
     </div>
   );
 };
-
-export default Modal;

@@ -1,9 +1,9 @@
-import React, { FC } from 'react';
+import React from 'react';
 import cn from 'clsx';
 import styles from './Alert.module.css';
 import { AlertProps } from './Alert.types';
 
-const AlertComponent = (props: AlertProps) => {
+export const Alert: React.FC<AlertProps> = (props: AlertProps) => {
   const {
     className = '',
     flat,
@@ -56,10 +56,3 @@ const AlertComponent = (props: AlertProps) => {
     </div>
   );
 };
-
-const Alert: FC<AlertProps> = (props) => {
-  return <AlertComponent {...props} />;
-};
-
-Alert.displayName = 'Alert';
-export default Alert;

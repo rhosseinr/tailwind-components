@@ -1,13 +1,12 @@
-import React, { Component, FC, forwardRef, useRef } from 'react';
+import React from 'react';
 import cn from 'clsx';
 import styles from './InputBox.module.css';
 import { InputBoxProps } from './InputBox.types';
 
-const InputBoxComponent = (props: InputBoxProps, inputRef) => {
+export const InputBox: React.FC = (props: InputBoxProps) => {
   const { className, onChange, ...rest } = props;
 
   const rootClassName = cn(styles.root, {}, className);
-  const ref = useRef<typeof Component>(null);
 
   const handleOnChange = (e: any) => {
     if (onChange) {
@@ -31,10 +30,3 @@ const InputBoxComponent = (props: InputBoxProps, inputRef) => {
     </label>
   );
 };
-
-const InputBox: FC<InputBoxProps> = forwardRef((props, ref) => {
-  return <InputBoxComponent {...props} ref={ref} />;
-});
-
-InputBox.displayName = 'InputBox';
-export default InputBox;
