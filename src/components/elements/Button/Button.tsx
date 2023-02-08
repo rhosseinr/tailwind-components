@@ -21,23 +21,8 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
 
   const rootClassName = cn(
     styles.root,
-    {
-      [styles.primary]: variant === 'primary',
-      [styles.secondary]: variant === 'secondary',
-      [styles.dark]: variant === 'dark',
-      [styles.light]: variant === 'light',
-      [styles.success]: variant === 'success',
-      [styles.warning]: variant === 'warning',
-      [styles.danger]: variant === 'danger',
-      [styles.error]: variant === 'error',
-      [styles.info]: variant === 'info',
-    },
-    {
-      [styles.sm]: size === 'sm',
-      [styles.md]: size === 'md',
-      [styles.lg]: size === 'lg',
-      [styles.xl]: size === 'xl',
-    },
+    styles[size],
+    styles[variant],
     {
       [styles.loading]: loading,
       [styles.flat]: flat,

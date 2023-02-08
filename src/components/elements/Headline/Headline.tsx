@@ -14,27 +14,7 @@ export const Headline: React.FC<HeadlineProps> = (props: HeadlineProps) => {
     ...rest
   } = props;
 
-  const rootClassName = cn(
-    styles.root,
-    {
-      [styles.primary]: type === 'primary',
-      [styles.secondary]: type === 'secondary',
-      [styles.success]: type === 'success',
-      [styles.warning]: type === 'warning',
-      [styles.danger]: type === 'danger',
-      [styles.error]: type === 'error',
-      [styles.info]: type === 'info',
-    },
-    {
-      [styles.h1]: size === 'h1',
-      [styles.h2]: size === 'h2',
-      [styles.h3]: size === 'h3',
-      [styles.h4]: size === 'h4',
-      [styles.h5]: size === 'h5',
-      [styles.h6]: size === 'h6',
-    },
-    className
-  );
+  const rootClassName = cn(styles.root, styles[type], styles[size], className);
 
   const Heading = size;
 

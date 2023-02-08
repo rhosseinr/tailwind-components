@@ -1,15 +1,15 @@
 .root {
-  appearance: none;
-  padding: var(--padding);
-  border-radius: var(--radius);
-  border: 1px solid var(--gray);
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  transition: all 0.2s ease-in-out;
-  will-change: transform;
+  @apply p-2;
 }
 
-.root:focus{
-  border-color: var(--primary);
+.root input{
+  @apply appearance-none p-2 block w-full border rounded-md border-gray-400 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm
+}
+
+.error input{
+  @apply  border-red-400 focus:border-red-500 focus:ring-red-500
+}
+
+.success input{
+  @apply  border-green-400 focus:border-green-500 focus:ring-green-500
 }

@@ -4,11 +4,19 @@ import styles from './InputBox.module.css';
 import { InputBoxProps } from './InputBox.types';
 
 export const InputBox: React.FC = (props: InputBoxProps) => {
-  const { className, onChange, ...rest } = props;
+  const {
+    className,
+    id,
+    name,
+    state = 'normal',
+    text,
+    onChange,
+    ...rest
+  } = props;
 
-  const rootClassName = cn(styles.root, {}, className);
+  const rootClassName = cn(styles.root, styles[state], className);
 
-  const handleOnChange = (e: any) => {
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
       onChange(e.target.value);
     }
@@ -16,10 +24,11 @@ export const InputBox: React.FC = (props: InputBoxProps) => {
   };
 
   return (
-    // eslint-disable-next-line jsx-a11y/label-has-associated-control
-    <label>
+    <div className={rootClassName}>
+      {text && <label htmlFor={id}>{text}</label>}
       <input
-        className={rootClassName}
+        id={id}
+        name={name}
         onChange={handleOnChange}
         autoComplete="off"
         autoCorrect="off"
@@ -27,6 +36,6 @@ export const InputBox: React.FC = (props: InputBoxProps) => {
         spellCheck="false"
         {...rest}
       />
-    </label>
+    </div>
   );
 };

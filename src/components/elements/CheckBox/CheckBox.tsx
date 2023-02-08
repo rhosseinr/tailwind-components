@@ -18,23 +18,8 @@ export const CheckBox: React.FC<CheckBoxProps> = (props) => {
   } = props;
   const rootClassName = cn(
     styles.root,
-    {
-      [styles.primary]: variant === 'primary',
-      [styles.secondary]: variant === 'secondary',
-      [styles.dark]: variant === 'dark',
-      [styles.light]: variant === 'light',
-      [styles.success]: variant === 'success',
-      [styles.warning]: variant === 'warning',
-      [styles.danger]: variant === 'danger',
-      [styles.error]: variant === 'error',
-      [styles.info]: variant === 'info',
-    },
-    {
-      [styles.sm]: checkSize === 'sm',
-      [styles.md]: checkSize === 'md',
-      [styles.lg]: checkSize === 'lg',
-      [styles.xl]: checkSize === 'xl',
-    },
+    styles[checkSize],
+    styles[variant],
     className
   );
 
