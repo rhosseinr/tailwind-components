@@ -1,29 +1,29 @@
 .root {
-  @apply m-1 shadow-md rounded leading-tight transition duration-150 ease-in-out text-white;
+  @apply m-1 shadow-md rounded leading-tight transition duration-150 ease-in-out;
 }
 
 .primary{
-  @apply bg-blue-400 ;
+  @apply border-blue-600 ;
 }
 
 .error,.danger{
-  @apply bg-red-400 ;
+  @apply border-red-400 ;
 }
 
 .warning{
-  @apply bg-yellow-400 ;
+  @apply border-yellow-400 ;
 }
 
 .success{
-  @apply bg-green-400 ;
+  @apply border-green-400 ;
 }
 
 .info{
-  @apply bg-sky-400 ;
+  @apply border-sky-400 ;
 }
 
 .secondary{
-  @apply bg-neutral-400;
+  @apply border-neutral-400;
 }
 
 .loading {
@@ -32,19 +32,19 @@
 }
 
 .sm {
-  @apply px-4 py-2 text-sm
+  @apply px-4 py-2 text-sm border-t-2
 }
 
 .md {
-  @apply px-6 py-3 text-base
+  @apply px-6 py-3 text-base border-t-4
 }
 
 .lg {
-  @apply px-8 py-4 text-lg
+  @apply px-8 py-4 text-lg border-t-8
 }
 
 .xl {
-  @apply px-10 py-5 text-xl
+  @apply px-10 py-5 text-xl border-t-8
 }
 
 .flat {

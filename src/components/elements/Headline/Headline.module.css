@@ -1,4 +1,10 @@
-.headline {
-  color: #02203C;
-  opacity: 0.75;
+.root {
+  @apply font-bold
 }
+
+.h1{@apply text-5xl mb-4}
+.h2{@apply text-4xl mb-3}
+.h3{@apply text-3xl mb-3}
+.h4{@apply text-2xl mb-2}
+.h5{@apply text-xl mb-1}
+.h6{@apply text-lg mb-1}

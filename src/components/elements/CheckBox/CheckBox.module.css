@@ -1,5 +1,75 @@
 .root {
-  position: relative;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  @apply flex items-center justify-start
+}
+
+.root input{
+  @apply border-gray-400
+}
+
+.root label{
+  @apply mx-2
+}
+
+.primary{
+  @apply accent-blue-600 focus:ring-blue-500;
+}
+
+.error,.danger{
+  @apply accent-red-600 focus:ring-red-500;
+}
+
+.warning{
+  @apply accent-yellow-600 focus:ring-yellow-500;
+}
+
+.success{
+  @apply accent-green-600 focus:ring-green-500;
+}
+
+.info{
+  @apply accent-sky-600 focus:ring-sky-500;
+}
+
+.light{
+  @apply accent-neutral-200 focus:ring-neutral-500;
+}
+
+.dark{
+  @apply accent-gray-800 focus:ring-gray-500;
+}
+
+.secondary{
+  @apply accent-neutral-400 focus:ring-neutral-500;
+}
+
+.sm {
+  @apply text-sm
+}
+
+.sm input{
+  @apply h-3 w-3 border-2 rounded-sm
+}
+
+.md {
+  @apply text-base
+}
+
+.md input{
+  @apply h-4 w-4 border-2 rounded
+}
+
+.lg {
+  @apply text-lg
+}
+
+.lg input{
+  @apply h-5 w-5 border-2 rounded-md
+}
+
+.xl {
+  @apply text-xl
+}
+
+.xl input{
+  @apply h-6 w-6 border-2 rounded-md
 }

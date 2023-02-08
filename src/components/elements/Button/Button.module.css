@@ -44,15 +44,15 @@
 }
 
 .md {
-  @apply px-4 py-2 text-base
+  @apply px-3 py-1 text-base
 }
 
 .lg {
-  @apply px-5 py-3 text-lg
+  @apply px-4 py-2 text-lg
 }
 
 .xl {
-  @apply px-6 py-4 text-xl
+  @apply px-5 py-3 text-xl
 }
 
 .flat {
