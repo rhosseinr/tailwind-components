@@ -35,11 +35,11 @@ To benefit from the best linting and on-save formatting experience, install the 
 ✅ HeadLine
 ✅ InputBox
 ✅ Modal
+✅ Card
 ⬜ Accordion
 ⬜ Avatar
 ⬜ Badge
 ⬜ BreadCrumbs
-⬜ Card
 ⬜ Collapse
 ⬜ ColorPicker
 ⬜ Container
