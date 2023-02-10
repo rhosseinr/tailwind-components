@@ -17,4 +17,9 @@ Default.args = {
   name: 'check',
   id: '123',
   value: 'checkItem',
+  variant: 'primary',
+  checkSize: 'md',
+  className: '',
+  disabled: false,
+  checked: false,
 };

@@ -14,4 +14,8 @@ export const Default: ComponentStory<typeof Headline> = (
 
 Default.args = {
   title: 'Headline Title',
+  size: 'h1',
+  className: '',
+  separator: true,
+  type: 'normal',
 };

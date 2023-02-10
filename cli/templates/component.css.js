@@ -1,7 +1,13 @@
 module.exports = () => ({
   extension: `.module.css`,
   content: `.root {
-  @apply pa-2;
+  @apply p-2;
 }
+
+.disabled{}
+
+.loading{}
+
+.flat{}
 `,
 });

@@ -13,5 +13,11 @@ export const Default: ComponentStory<typeof Card> = (args: CardProps) => (
 );
 
 Default.args = {
-  children: 'Card Title',
+  children: 'Card Content',
+  type: 'light',
+  size: 'md',
+  flat: false,
+  className: '',
+  loading: false,
+  disabled: false,
 };

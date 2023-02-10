@@ -19,21 +19,8 @@ export const Alert: React.FC<AlertProps> = (props: AlertProps) => {
 
   const rootClassName = cn(
     styles.root,
-    {
-      [styles.primary]: type === 'primary',
-      [styles.secondary]: type === 'secondary',
-      [styles.success]: type === 'success',
-      [styles.warning]: type === 'warning',
-      [styles.danger]: type === 'danger',
-      [styles.error]: type === 'error',
-      [styles.info]: type === 'info',
-    },
-    {
-      [styles.sm]: size === 'sm',
-      [styles.md]: size === 'md',
-      [styles.lg]: size === 'lg',
-      [styles.xl]: size === 'xl',
-    },
+    styles[size],
+    styles[type],
     {
       [styles.loading]: loading,
       [styles.disabled]: disabled,

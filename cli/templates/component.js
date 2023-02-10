@@ -19,6 +19,7 @@ export const ${componentName}: React.FC<${componentName}Props> = (props: ${compo
   const rootClassName = cn(
     styles.root,
     {
+      [styles.disabled]: disabled,
       [styles.loading]: loading,
       [styles.flat]: flat,
     },

@@ -16,4 +16,10 @@ Default.args = {
   title: 'Alert Title',
   message: 'Alert Message',
   type: 'primary',
+  size: 'md',
+  flat: false,
+  className: '',
+  loading: false,
+  disabled: false,
+  visible: true,
 };

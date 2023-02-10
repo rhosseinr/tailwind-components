@@ -1,3 +1,59 @@
 .root {
-  @apply pa-2;
+  @apply m-1 shadow-md rounded leading-tight transition duration-150 ease-in-out;
+}
+
+.light{
+  @apply bg-gray-50;
+}
+
+.dark{
+  @apply bg-neutral-800;
+}
+
+.primary{
+  @apply bg-blue-300;
+}
+
+.error,.danger{
+  @apply bg-red-300;
+}
+
+.warning{
+  @apply bg-yellow-300;
+}
+
+.success{
+  @apply bg-green-300;
+}
+
+.info{
+  @apply bg-sky-300;
+}
+
+.secondary{
+  @apply bg-neutral-300;
+}
+
+.disabled{}
+
+.loading{}
+
+.sm {
+  @apply px-4 py-2 text-sm
+}
+
+.md {
+  @apply px-6 py-3 text-base
+}
+
+.lg {
+  @apply px-8 py-4 text-lg
+}
+
+.xl {
+  @apply px-10 py-5 text-xl
+}
+
+.flat {
+  @apply shadow-none
 }

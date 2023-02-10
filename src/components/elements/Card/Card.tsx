@@ -8,16 +8,21 @@ export const Card: React.FC<CardProps> = (props: CardProps) => {
     className = '',
     children,
     flat,
+    type = 'primary',
     loading = false,
     disabled = false,
+    size = 'md',
     style = {},
     ...rest
   } = props;
 
   const rootClassName = cn(
     styles.root,
+    styles[size],
+    styles[type],
     {
       [styles.loading]: loading,
+      [styles.disabled]: disabled,
       [styles.flat]: flat,
     },
     className

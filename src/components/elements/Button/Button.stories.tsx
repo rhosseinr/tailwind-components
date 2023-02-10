@@ -15,4 +15,10 @@ export const Default: ComponentStory<typeof Button> = (args: ButtonProps) => (
 Default.args = {
   children: 'Button Title',
   variant: 'primary',
+  size: 'md',
+  flat: false,
+  className: '',
+  loading: false,
+  disabled: false,
+  type: 'button',
 };

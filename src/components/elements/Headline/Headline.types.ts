@@ -5,6 +5,7 @@ export interface HeadlineProps extends HTMLAttributes<HTMLElement> {
   className?: string;
   separator?: boolean;
   type?:
+    | 'normal'
     | 'warning'
     | 'danger'
     | 'error'

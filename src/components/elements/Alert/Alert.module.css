@@ -3,27 +3,27 @@
 }
 
 .primary{
-  @apply border-blue-600 ;
+  @apply border-blue-600;
 }
 
 .error,.danger{
-  @apply border-red-400 ;
+  @apply border-red-600;
 }
 
 .warning{
-  @apply border-yellow-400 ;
+  @apply border-yellow-600;
 }
 
 .success{
-  @apply border-green-400 ;
+  @apply border-green-600;
 }
 
 .info{
-  @apply border-sky-400 ;
+  @apply border-sky-600;
 }
 
 .secondary{
-  @apply border-neutral-400;
+  @apply border-neutral-600;
 }
 
 .loading {

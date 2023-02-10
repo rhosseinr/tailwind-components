@@ -15,4 +15,6 @@ export const Default: ComponentStory<typeof InputBox> = (
 Default.args = {
   value: '',
   text: 'name',
+  validation: 'normal',
+  type: 'text',
 };
