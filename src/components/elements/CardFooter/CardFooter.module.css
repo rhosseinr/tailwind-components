@@ -1,0 +1,9 @@
+.root {
+  @apply p-2;
+}
+
+.disabled{}
+
+.loading{}
+
+.flat{}
