@@ -47,7 +47,7 @@ generatedTemplates.forEach((template) => {
 
 fs.writeFileSync(
   `${componentDirectory}/index.ts`,
-  `export { default } from './${componentName}';\n`
+  `export { ${componentName} } from './${componentName}';\n`
 );
 
 console.log(

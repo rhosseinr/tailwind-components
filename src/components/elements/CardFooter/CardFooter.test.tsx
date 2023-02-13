@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import CardFooter from './CardFooter';
+import { CardFooter } from './CardFooter';
 import { CardFooterProps } from './CardFooter.types';
 
 describe('Test CardFooter Component', () => {
@@ -9,9 +9,6 @@ describe('Test CardFooter Component', () => {
   beforeEach(() => {
     props = {
       children: 'Im an example component.',
-      flat: false,
-      loading: false,
-      disabled: false,
     };
   });
 

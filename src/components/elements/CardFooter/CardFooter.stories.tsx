@@ -8,9 +8,9 @@ export default {
   component: CardFooter,
 } as ComponentMeta<typeof CardFooter>;
 
-export const Default: ComponentStory<typeof CardFooter> = (args: CardFooterProps) => (
-  <CardFooter {...args} />
-);
+export const Default: ComponentStory<typeof CardFooter> = (
+  args: CardFooterProps
+) => <CardFooter {...args} />;
 
 Default.args = {
   children: 'CardFooter Title',

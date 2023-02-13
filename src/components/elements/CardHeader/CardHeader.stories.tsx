@@ -8,9 +8,9 @@ export default {
   component: CardHeader,
 } as ComponentMeta<typeof CardHeader>;
 
-export const Default: ComponentStory<typeof CardHeader> = (args: CardHeaderProps) => (
-  <CardHeader {...args} />
-);
+export const Default: ComponentStory<typeof CardHeader> = (
+  args: CardHeaderProps
+) => <CardHeader {...args} />;
 
 Default.args = {
   children: 'CardHeader Title',

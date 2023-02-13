@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import CardHeader from './CardHeader';
+import { CardHeader } from './CardHeader';
 import { CardHeaderProps } from './CardHeader.types';
 
 describe('Test CardHeader Component', () => {
@@ -9,9 +9,6 @@ describe('Test CardHeader Component', () => {
   beforeEach(() => {
     props = {
       children: 'Im an example component.',
-      flat: false,
-      loading: false,
-      disabled: false,
     };
   });
 
