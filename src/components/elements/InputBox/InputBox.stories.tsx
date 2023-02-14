@@ -14,7 +14,12 @@ export const Default: ComponentStory<typeof InputBox> = (
 
 Default.args = {
   value: '',
+  placeholder: 'type a value',
   text: 'name',
   validation: 'normal',
   type: 'text',
+  readOnly: false,
+  autocomplete: false,
+  autofocus: false,
+  required: false,
 };

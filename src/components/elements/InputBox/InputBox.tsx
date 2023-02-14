@@ -11,11 +11,21 @@ export const InputBox: React.FC = (props: InputBoxProps) => {
     validation = 'normal',
     text,
     value,
+    readOnly,
+    required,
     onChange,
     ...rest
   } = props;
 
-  const rootClassName = cn(styles.root, styles[validation], className);
+  const rootClassName = cn(
+    styles.root,
+    {
+      [styles.required]: required,
+      [styles.readOnly]: readOnly,
+    },
+    styles[validation],
+    className
+  );
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (onChange) {
@@ -26,9 +36,14 @@ export const InputBox: React.FC = (props: InputBoxProps) => {
 
   return (
     <div className={rootClassName}>
-      {text && <label htmlFor={id}>{text}</label>}
+      {text && (
+        <label htmlFor={id}>
+          {text} {required && <span>*</span>}
+        </label>
+      )}
       <input
         id={id}
+        readOnly={readOnly}
         name={name}
         value={value}
         onChange={handleOnChange}
