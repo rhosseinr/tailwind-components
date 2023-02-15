@@ -16,8 +16,9 @@ export const Default: ComponentStory<typeof Card> = (args: CardProps) => (
 
 export const FullCard: ComponentStory<typeof Card> = (args: CardProps) => (
   <Card {...args}>
-    <CardHeader />
-    <CardFooter />
+    <CardHeader>Header</CardHeader>
+    <div>Card Content</div>
+    <CardFooter>Footer</CardFooter>
   </Card>
 );
 
